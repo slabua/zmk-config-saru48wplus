@@ -1,3 +1,3 @@
 build:
   settings:
-    board_root: /boards/shields/Saru48WPlus
+    board_root: .
