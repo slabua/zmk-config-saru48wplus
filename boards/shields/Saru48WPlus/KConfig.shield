@@ -1,2 +1,2 @@
 config SHIELD_SARU48WPLUS
-    def_bool $(shields_list_contains, Saru48WPlus)
+    def_bool $(shields_list_contains,Saru48WPlus)
