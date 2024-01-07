@@ -59,15 +59,15 @@
         raise_layer {
 // -----------------------------------------------------------------------------------------------------------------------------------
 // |   F1    |   F2    |   F3    |   F4    |   F5    |   F6    |   F7    |   F8    |   F9    |   F10   |   F11   |   F12   |         |
-// |         |         |         |         |         |         |         |         |         |         |    `    |    ~    |  HOME   |
+// | BOOTLDR |         |         |         |         |         |         |         |         |         |    `    |    ~    |  HOME   |
 // |  SHIFT  |         |         |         |         |         |         |         |         |         |         |         |   END   |
 // |  L ALT  |  XXXXX  |  CTRL   |         |  SPACE  |         | RETURN  |         |   DEL   |  XXXXX  |         |         |         |
 // -----------------------------------------------------------------------------------------------------------------------------------
             bindings = <
-    &kp F1   &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12   &none
-    &none    &none     &none     &none     &none     &none     &none     &none     &none     &none     &kp GRAVE &kp TILDE &kp HOME
-    &kp LSHIFT &none   &none     &none     &none     &none     &none     &none     &none     &none     &none     &none     &kp END
-    &kp LALT   &none   &kp LCTRL           &kp SPACE           &kp RET             &kp DEL   &none     &none     &none     &none
+    &kp F1      &kp F2  &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12   &none
+    &bootloader &none   &none     &none     &none     &none     &none     &none     &none     &none     &kp GRAVE &kp TILDE &kp HOME
+    &kp LSHIFT  &none   &none     &none     &none     &none     &none     &none     &none     &none     &none     &none     &kp END
+    &kp LALT    &none   &kp LCTRL           &kp SPACE           &kp RET             &kp DEL   &none     &none     &none     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
