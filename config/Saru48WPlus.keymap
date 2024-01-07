@@ -30,13 +30,13 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo RAISE>, <&kp RGUI>;
+            bindings = <&mo RAISE>, <&kp RALT>;
         };
         td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LALT>, <&kp RALT>;
+            bindings = <&kp LALT>, <&kp RGUI>;
         };
     };
 
@@ -48,7 +48,7 @@
 // |   ESC   |    Q    |    W    |    E    |    R    |    T    |    Y    |    U    |    I    |    O    |    P    |    -    |  MUTE   |
 // |   TAB   |    A    |    S    |    D    |    F    |    G    |    H    |    J    |    K    |    L    |    ;    |    '    |  PRINT  |
 // |  SHIFT  |    Z    |    X    |    C    |    V    |    B    |    N    |    M    |    ,    |    .    |    /    |   UP    |  SHIFT  |
-// |LALT/RALT| LOW/WIN |  LCTRL  |         |  SPACE  |         | RETURN  |         |BACKSPACE| RAI/GUI |  LEFT   |  DOWN   |  RIGHT  |
+// |LALT/RGUI|LOW/LWIN |  LCTRL  |         |  SPACE  |         | RETURN  |         |BACKSPACE|RAI/RALT |  LEFT   |  DOWN   |  RIGHT  |
 // -----------------------------------------------------------------------------------------------------------------------------------
             bindings = <
     &kp ESC    &kp Q   &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp MINUS &kp C_MUTE
