@@ -1,4 +1,4 @@
-#include "Saru48WPlus.dtsi"
+#include "saru48wplus.dtsi"
 
 &left_encoder {
     status = "okay";
