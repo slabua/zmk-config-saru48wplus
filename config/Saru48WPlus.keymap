@@ -19,6 +19,21 @@
 //};
 
 / {
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo LOWER>, <&kp LWIN>;
+        };
+        td1: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo RAISE>, <&kp RGUI>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -27,13 +42,13 @@
 // |   ESC   |    Q    |    W    |    E    |    R    |    T    |    Y    |    U    |    I    |    O    |    P    |    -    |  MUTE   |
 // |   TAB   |    A    |    S    |    D    |    F    |    G    |    H    |    J    |    K    |    L    |    ;    |    '    |  PRINT  |
 // |  SHIFT  |    Z    |    X    |    C    |    V    |    B    |    N    |    M    |    ,    |    .    |    /    |   UP    |  SHIFT  |
-// |  L ALT  |  LOWER  |  CTRL   |         |  SPACE  |         | RETURN  |         |BACKSPACE|  RAISE  |  LEFT   |  DOWN   |  RIGHT  |
+// |  L ALT  | LOW/WIN |  CTRL   |         |  SPACE  |         | RETURN  |         |BACKSPACE| RAI/GUI |  LEFT   |  DOWN   |  RIGHT  |
 // -----------------------------------------------------------------------------------------------------------------------------------
             bindings = <
     &kp ESC    &kp Q   &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSLH  &kp C_MUTE
     &kp TAB    &kp A   &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   &kp PSCRN
     &kp LSHIFT &kp Z   &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp UP    &kp RSHIFT
-    &kp LALT &mo LOWER &kp LCTRL           &kp SPACE           &kp RET             &kp BSPC  &mo RAISE &kp LEFT  &kp DOWN  &kp RIGHT
+    &kp LALT   &td0    &kp LCTRL           &kp SPACE           &kp RET             &kp BSPC  &td1      &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
