@@ -41,16 +41,16 @@
 
         lower_layer {
 // -----------------------------------------------------------------------------------------------------------------------------------
-// | BT CLR  |    !    |    @    |    #    |    $    |    (    |    )    |    7    |    8    |    9    |    *    |    +    |  MUTE   |
-// |    |    |    ^    |    &    |    *    |    %    |    [    |    ]    |    4    |    5    |    6    |    /    |    =    |  PgUP   |
-// |  SHIFT  |   BT1   |   BT2   |   BT3   |         |         |    0    |    1    |    2    |    3    |         |         |  PgDN   |
+// | BT CLR  |    !    |    @    |    #    |    $    |    (    |    )    |    7    |    8    |    9    |    *    |    -    |  MUTE   |
+// |    |    |    ^    |    &    |    *    |    %    |    [    |    ]    |    4    |    5    |    6    |    /    |    +    |  PgUP   |
+// |  SHIFT  |   BT1   |   BT2   |   BT3   |         |         |    0    |    1    |    2    |    3    |    .    |    =    |  PgDN   |
 // |  L ALT  |  XXXXX  |  CTRL   |         |  SPACE  |         | RETURN  |         |   DEL   |  XXXXX  |         |         |  RETURN |
 // -----------------------------------------------------------------------------------------------------------------------------------
             bindings = <
-    &bt BT_CLR &kp EXCL     &kp AT       &kp HASH     &kp DLLR  &kp LPAR  &kp RPAR  &kp N7    &kp N8    &kp N9    &kp KP_ASTERISK &kp KP_PLUS &kp C_MUTE
-    &kp PIPE   &kp CARET    &kp AMPS     &kp STAR     &kp PRCNT &kp LBKT  &kp RBKT  &kp N4    &kp N5    &kp N6    &kp KP_SLASH    &kp EQUAL   &kp PG_UP
-    &kp LSHIFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none     &none     &kp N0    &kp N1    &kp N2    &kp N3    &none           &none       &kp PG_DN
-    &kp LALT   &none        &kp LCTRL                 &kp SPACE           &kp RET             &kp DEL   &none     &none           &none       &kp RET
+    &bt BT_CLR &kp EXCL     &kp AT       &kp HASH     &kp DLLR  &kp LPAR  &kp RPAR  &kp N7    &kp N8    &kp N9    &kp KP_ASTERISK &kp KP_MINUS &kp C_MUTE
+    &kp PIPE   &kp CARET    &kp AMPS     &kp STAR     &kp PRCNT &kp LBKT  &kp RBKT  &kp N4    &kp N5    &kp N6    &kp KP_SLASH    &kp KP_PLUS  &kp PG_UP
+    &kp LSHIFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none     &none     &kp N0    &kp N1    &kp N2    &kp N3    &kp KP_DOT      &kp EQUAL    &kp PG_DN
+    &kp LALT   &none        &kp LCTRL                 &kp SPACE           &kp RET             &kp DEL   &none     &none           &none        &kp RET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
