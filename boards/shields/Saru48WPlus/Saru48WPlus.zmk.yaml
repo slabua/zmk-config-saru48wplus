@@ -1,0 +1,9 @@
+file_format: "1"
+id: Saru48WPlus
+name: Saru48WPlus
+type: shield
+url: TODO
+requires:
+  - nice_nano_v2
+features:
+  - encoder
