@@ -14,9 +14,9 @@
 #define RAISE   2
 
 
-&lt {
-    tapping-term-ms = <200>;
-};
+//&lt {
+//    tapping-term-ms = <200>;
+//};
 
 / {
     keymap {
