@@ -1,6 +1,6 @@
 if SHIELD_SARU48WPLUS
 
 config ZMK_KEYBOARD_NAME
-    default "SLBLabs Saru48W+"
+    default "Saru48WPlus"
 
 endif
