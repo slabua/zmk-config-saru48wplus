@@ -1,4 +1,4 @@
-![image](https://github.com/slabua/zmk-config-saru48wplus/assets/1002978/dfcc1f2a-a236-4bc7-a460-7b4d6277c81c)
+![image](https://github.com/slabua/zmk-config-saru48wplus/assets/1002978/b576edc9-2c06-491e-81d0-a81811a348f3)
 
 DEFAULT
 -----------------------------------------------------------------------------------------------------------------------------------
