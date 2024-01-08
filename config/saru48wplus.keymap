@@ -22,10 +22,17 @@
 / {
     combos {
         compatible = "zmk,combos";
+
         combo_ret {
             timeout-ms = <50>;
             key-positions = <24 25>;
             bindings = <&kp RET>;
+            layers = <DEFAULT>;
+        };
+        combo_bsp {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp BSPC>;
             layers = <DEFAULT>;
         };
     };
