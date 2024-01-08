@@ -18,7 +18,18 @@
 //    tapping-term-ms = <200>;
 //};
 
+
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_ret {
+            timeout-ms = <50>;
+            key-positions = <24 25>;
+            bindings = <&kp RET>;
+            layers = <DEFAULT>;
+        };
+    };
+
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
