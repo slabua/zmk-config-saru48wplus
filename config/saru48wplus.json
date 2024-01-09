@@ -15,7 +15,7 @@
         { "label":      "P", "row": 0, "col": 10, "x":    10, "y":  0 },
         { "label":      "-", "row": 0, "col": 11, "x":    11, "y":  0 },
         { "label":   "Mute", "row": 0, "col": 12, "x":    12, "y":  0 },
-    
+
         { "label":    "Tab", "row": 1, "col":  0, "x":     0, "y":  1 },
         { "label":      "A", "row": 1, "col":  1, "x":     1, "y":  1 },
         { "label":      "S", "row": 1, "col":  2, "x":     2, "y":  1 },
@@ -29,7 +29,7 @@
         { "label":      ";", "row": 1, "col": 10, "x":    10, "y":  1 },
         { "label":      "'", "row": 1, "col": 11, "x":    11, "y":  1 },
         { "label":   "Prnt", "row": 1, "col": 12, "x":    12, "y":  1 },
-    
+
         { "label": "LShift", "row": 2, "col":  0, "x":     0, "y":  2 },
         { "label":      "Z", "row": 2, "col":  1, "x":     1, "y":  2 },
         { "label":      "X", "row": 2, "col":  2, "x":     2, "y":  2 },
@@ -43,17 +43,17 @@
         { "label":      "/", "row": 2, "col": 10, "x":    10, "y":  2 },
         { "label":     "Up", "row": 2, "col": 11, "x":    11, "y":  2 },
         { "label": "RShift", "row": 2, "col": 12, "x":    12, "y":  2 },
-    
-        { "label":   "LAlt", "row": 3, "col":  0, "x":  0, "y":  3 },
-        { "label":    "LWR", "row": 3, "col":  1, "x":  1, "y":  3 },
-        { "label":   "CTRL", "row": 3, "col":  2, "x":  2, "y":  3 },
-        { "label":  "SPACE", "row": 3, "col":  4, "x":  4, "y":  3 },
-        { "label":    "ENT", "row": 3, "col":  6, "x":  6, "y":  3 },
-        { "label":   "BSPC", "row": 3, "col":  8, "x":  8, "y":  3 },
-        { "label":    "RSE", "row": 3, "col":  9, "x":  9, "y":  3 },
-        { "label":   "Left", "row": 3, "col": 10, "x": 10, "y":  3 },
-        { "label":   "Down", "row": 3, "col": 11, "x": 11, "y":  3 },
-        { "label":  "Right", "row": 3, "col": 12, "x": 12, "y":  3 }
+
+        { "label":   "LAlt", "row": 3, "col":  0, "x":  0,    "y":  3 },
+        { "label":  "LOWER", "row": 3, "col":  1, "x":  1,    "y":  3, "w": 1.25 },
+        { "label":  "LCtrl", "row": 3, "col":  2, "x":  2.25, "y":  3, "w": 1.25 },
+        { "label":  "Space", "row": 3, "col":  4, "x":  3.5,  "y":  3, "w": 2 },
+        { "label":  "Enter", "row": 3, "col":  6, "x":  5.5,  "y":  3, "w": 2 },
+        { "label":   "Bksp", "row": 3, "col":  8, "x":  7.5,  "y":  3, "w": 1.25 },
+        { "label":  "RAISE", "row": 3, "col":  9, "x":  8.75, "y":  3, "w": 1.25 },
+        { "label":   "Left", "row": 3, "col": 10, "x": 10,    "y":  3 },
+        { "label":   "Down", "row": 3, "col": 11, "x": 11,    "y":  3 },
+        { "label":  "Right", "row": 3, "col": 12, "x": 12,    "y":  3 }
       ]
     }
   },
