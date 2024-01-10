@@ -1,4 +1,4 @@
-![image](https://github.com/slabua/zmk-config-saru48wplus/assets/1002978/644f05ed-1c93-46e8-9198-19b499aad3cd)
+![image](https://github.com/slabua/zmk-config-saru48wplus/assets/1002978/47443eeb-35fa-4d99-ad9e-d1c6b2842979)
 
 DEFAULT
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -6,8 +6,8 @@ DEFAULT
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |   ESC   |    Q    |    W    |    E    |    R    |    T    |    Y    |    U    |    I    |    O    |    P    |    -    |  MUTE   |
 |   TAB   |    A    |    S    |    D    |    F    |    G    |    H    |    J    |    K    |    L    |    ;    |    '    |  PRINT  |
-|LSHF/SYSR|    Z    |    X    |    C    |    V    |    B    |    N    |    M    |    ,    |    .    |    /    |   UP    | RSHIFT  |
-|LALT/RWIN|LOW/LWIN |LCTRL/APP|         |  SPACE  |         | RETURN  |         |BACKSPACE|RAI/RALT |  LEFT   |  DOWN   |  RIGHT  |
+|LSHF/SYSR|    Z    |    X    |    C    |    V    |    B    |    N    |    M    |    ,    |    .    |    /    |   UP    |RSHFT/DEL|
+|LALT/RWIN|LOWR/LWIN|LCTRL/APP|         |  SPACE  |         | RETURN  |         |BKSPC/DEL|RAIS/RALT|  LEFT   |  DOWN   |  RIGHT  |
 
 LOWER
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ LOWER
 | BOOTLDR |    !    |    @    |    #    |    $    |    (    |    )    |    7    |    8    |    9    |    *    |    -    |ZOOMRESET|
 |   \|    |    ^    |    &    |    *    |    %    |    [    |    ]    |    4    |    5    |    6    |    /    |    +    |  PgUP   |
 | BT-CLR  |   BT1   |   BT2   |   BT3   | OUT-USB | OUT-BLE |    0    |    1    |    2    |    3    |    .    |    =    |  PgDN   |
-|LALT/RWIN|  XXXXX  |LCTRL/APP|         |  SPACE  |         | RETURN  |         |   DEL   |  RALT   |         |         | RETURN  |
+|LALT/RWIN|  XXXXX  |LCTRL/APP|         |  SPACE  |         | RETURN  |         |BKSPC/DEL|  RALT   |         |         | RETURN  |
 
 RAISE
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -25,4 +25,4 @@ RAISE
 |   F1    |   F2    |   F3    |   F4    |   F5    |   F6    |   F7    |   F8    |   F9    |   F10   |   F11   |   F12   |         |
 |         |         |         |         |         |         |         |         |         |         |    `    |    ~    |  HOME   |
 | LSHIFT  |         |         |         |         |         |         |         |         |         |    \    |         |   END   |
-|LALT/RWIN|  LWIN   |LCTRL/APP|         |  SPACE  |         | RETURN  |         |   DEL   |  XXXXX  |         |         |         |
+|LALT/RWIN|  LWIN   |LCTRL/APP|         |  SPACE  |         | RETURN  |         |BKSPC/DEL|  XXXXX  |         |         |         |
