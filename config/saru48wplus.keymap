@@ -5,15 +5,15 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 /* Layers */
+
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
-
 
 / {
     combos {
@@ -25,6 +25,7 @@
             bindings = <&kp RET>;
             layers = <DEFAULT>;
         };
+
         combo_bsp {
             timeout-ms = <50>;
             key-positions = <10 11>;
@@ -34,35 +35,48 @@
     };
 
     behaviors {
-        td0: tap_dance_0 {
+        td0: Lower-LGUI {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo LOWER>, <&kp LWIN>;
         };
-        td1: tap_dance_1 {
+
+        td1: Raise-RALT {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo RAISE>, <&kp RALT>;
         };
-        td2: tap_dance_2 {
+
+        td2: LALT-RGUI {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LALT>, <&kp RWIN>;
         };
-        td3: tap_dance_3 {
+
+        td3: LSFT-SysREQ {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LSHIFT>, <&kp SYSREQ>;
         };
-        td4: tap_dance_4 {
+
+        td4: LCTRL-APP {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LCTRL>, <&kp K_APP>;
+        };
+
+        td5: tap_dance_5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+
+            label = "BSPC-DEL";
         };
     };
 
@@ -70,51 +84,54 @@
         compatible = "zmk,keymap";
 
         default_layer {
-// -----------------------------------------------------------------------------------------------------------------------------------
-// |   ESC   |    Q    |    W    |    E    |    R    |    T    |    Y    |    U    |    I    |    O    |    P    |    -    |  MUTE   |
-// |   TAB   |    A    |    S    |    D    |    F    |    G    |    H    |    J    |    K    |    L    |    ;    |    '    |  PRINT  |
-// |LSHF/SYSR|    Z    |    X    |    C    |    V    |    B    |    N    |    M    |    ,    |    .    |    /    |   UP    | RSHIFT  |
-// |LALT/RWIN|LOW/LWIN |LCTRL/APP|         |  SPACE  |         | RETURN  |         |BACKSPACE|RAIS/RALT|  LEFT   |  DOWN   |  RIGHT  |
-// -----------------------------------------------------------------------------------------------------------------------------------
+            // -----------------------------------------------------------------------------------------------------------------------------------
+            // |   ESC   |    Q    |    W    |    E    |    R    |    T    |    Y    |    U    |    I    |    O    |    P    |    -    |  MUTE   |
+            // |   TAB   |    A    |    S    |    D    |    F    |    G    |    H    |    J    |    K    |    L    |    ;    |    '    |  PRINT  |
+            // |LSHF/SYSR|    Z    |    X    |    C    |    V    |    B    |    N    |    M    |    ,    |    .    |    /    |   UP    | RSHIFT  |
+            // |LALT/RWIN|LOW/LWIN |LCTRL/APP|         |  SPACE  |         | RETURN  |         |BACKSPACE|RAIS/RALT|  LEFT   |  DOWN   |  RIGHT  |
+            // -----------------------------------------------------------------------------------------------------------------------------------
+
             bindings = <
-    &kp ESC    &kp Q   &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp MINUS &kp C_MUTE
-    &kp TAB    &kp A   &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   &kp PSCRN
-    &td3       &kp Z   &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp UP    &kp RSHIFT
-    &td2       &td0    &td4      &kp SPACE           &kp RET             &kp BSPC  &td1      &kp LEFT  &kp DOWN  &kp RIGHT
+&kp ESC  &kp Q  &kp W  &kp E  &kp R      &kp T  &kp Y    &kp U  &kp I      &kp O    &kp P     &kp MINUS  &kp C_MUTE
+&kp TAB  &kp A  &kp S  &kp D  &kp F      &kp G  &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT    &kp PSCRN
+&td3     &kp Z  &kp X  &kp C  &kp V      &kp B  &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp UP     &kp RSHIFT
+&td2     &td0   &td4          &kp SPACE         &kp RET         &td5       &td1     &kp LEFT  &kp DOWN   &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
-// -----------------------------------------------------------------------------------------------------------------------------------
-// | BOOTLDR |    !    |    @    |    #    |    $    |    (    |    )    |    7    |    8    |    9    |    *    |    -    |ZOOMRESET|
-// |    |    |    ^    |    &    |    *    |    %    |    [    |    ]    |    4    |    5    |    6    |    /    |    +    |  PgUP   |
-// | BT CLR  |   BT1   |   BT2   |   BT3   | OUT-USB | OUT-BLE |    0    |    1    |    2    |    3    |    .    |    =    |  PgDN   |
-// |LALT/RWIN|  XXXXX  |LCTRL/APP|         |  SPACE  |         | RETURN  |         |   DEL   |  RALT   |         |         | RETURN  |
-// -----------------------------------------------------------------------------------------------------------------------------------
+            // -----------------------------------------------------------------------------------------------------------------------------------
+            // | BOOTLDR |    !    |    @    |    #    |    $    |    (    |    )    |    7    |    8    |    9    |    *    |    -    |ZOOMRESET|
+            // |    |    |    ^    |    &    |    *    |    %    |    [    |    ]    |    4    |    5    |    6    |    /    |    +    |  PgUP   |
+            // | BT CLR  |   BT1   |   BT2   |   BT3   | OUT-USB | OUT-BLE |    0    |    1    |    2    |    3    |    .    |    =    |  PgDN   |
+            // |LALT/RWIN|  XXXXX  |LCTRL/APP|         |  SPACE  |         | RETURN  |         |   DEL   |  RALT   |         |         | RETURN  |
+            // -----------------------------------------------------------------------------------------------------------------------------------
+
             bindings = <
-    &bootloader &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp LPAR     &kp RPAR  &kp N7    &kp N8    &kp N9    &kp KP_ASTERISK &kp KP_MINUS &kp LC(N0)
-    &kp PIPE    &kp CARET    &kp AMPS     &kp STAR     &kp PRCNT    &kp LBKT     &kp RBKT  &kp N4    &kp N5    &kp N6    &kp KP_SLASH    &kp KP_PLUS  &kp PG_UP
-    &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &out OUT_USB &out OUT_BLE &kp N0    &kp N1    &kp N2    &kp N3    &kp KP_DOT      &kp KP_EQUAL &kp PG_DN
-    &td2        &none        &td4                      &kp SPACE                 &kp RET             &kp DEL   &kp RALT  &none           &none        &kp RET
+&bootloader  &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp LPAR      &kp RPAR  &kp N7  &kp N8  &kp N9    &kp KP_ASTERISK  &kp KP_MINUS  &kp LC(N0)
+&kp PIPE     &kp CARET     &kp AMPS      &kp STAR      &kp PRCNT     &kp LBKT      &kp RBKT  &kp N4  &kp N5  &kp N6    &kp KP_SLASH     &kp KP_PLUS   &kp PG_UP
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &out OUT_USB  &out OUT_BLE  &kp N0    &kp N1  &kp N2  &kp N3    &kp KP_DOT       &kp KP_EQUAL  &kp PG_DN
+&td2         &none         &td4                        &kp SPACE                   &kp RET           &td5    &kp RALT  &none            &none         &kp RET
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
         };
 
         raise_layer {
-// -----------------------------------------------------------------------------------------------------------------------------------
-// |   F1    |   F2    |   F3    |   F4    |   F5    |   F6    |   F7    |   F8    |   F9    |   F10   |   F11   |   F12   |         |
-// |         |         |         |         |         |         |         |         |         |         |    `    |    ~    |  HOME   |
-// | LSHIFT  |         |         |         |         |         |         |         |         |         |    \    |         |   END   |
-// |LALT/RWIN|  LWIN   |LCTRL/APP|         |  SPACE  |         | RETURN  |         |BACKSPACE|  XXXXX  |         |         |         |
-// -----------------------------------------------------------------------------------------------------------------------------------
+            // -----------------------------------------------------------------------------------------------------------------------------------
+            // |   F1    |   F2    |   F3    |   F4    |   F5    |   F6    |   F7    |   F8    |   F9    |   F10   |   F11   |   F12   |         |
+            // |         |         |         |         |         |         |         |         |         |         |    `    |    ~    |  HOME   |
+            // | LSHIFT  |         |         |         |         |         |         |         |         |         |    \    |         |   END   |
+            // |LALT/RWIN|  LWIN   |LCTRL/APP|         |  SPACE  |         | RETURN  |         |BACKSPACE|  XXXXX  |         |         |         |
+            // -----------------------------------------------------------------------------------------------------------------------------------
+
             bindings = <
-    &kp F1      &kp F2   &kp F3    &kp F4  &kp F5    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12   &none
-    &none       &none    &none     &none   &none     &none     &none     &none     &none     &none     &kp GRAVE &kp TILDE &kp HOME
-    &kp LSHIFT  &none    &none     &none   &none     &none     &none     &none     &none     &none     &kp BSLH  &none     &kp END
-    &td2        &kp LWIN &td4              &kp SPACE           &kp RET             &kp BSPC  &none     &none     &none     &none
+&kp F1      &kp F2    &kp F3  &kp F4  &kp F5     &kp F6  &kp F7   &kp F8  &kp F9  &kp F10  &kp F11    &kp F12    &none
+&none       &none     &none   &none   &none      &none   &none    &none   &none   &none    &kp GRAVE  &kp TILDE  &kp HOME
+&kp LSHIFT  &none     &none   &none   &none      &none   &none    &none   &none   &none    &kp BSLH   &none      &kp END
+&td2        &kp LWIN  &td4            &kp SPACE          &kp RET          &td5    &none    &none      &none      &none
             >;
 
             //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
