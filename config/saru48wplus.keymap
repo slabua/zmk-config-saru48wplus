@@ -35,48 +35,54 @@
     };
 
     behaviors {
-        td0: Lower-LGUI {
+        td0: Lower_LGUI {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo LOWER>, <&kp LWIN>;
         };
 
-        td1: Raise-RALT {
+        td1: Raise_RALT {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo RAISE>, <&kp RALT>;
         };
 
-        td2: LALT-RGUI {
+        td2: LALT_RGUI {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LALT>, <&kp RWIN>;
         };
 
-        td3: LSFT-SysREQ {
+        td3: LSFT_SysREQ {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LSHIFT>, <&kp SYSREQ>;
         };
 
-        td4: LCTRL-APP {
+        td4: LCTRL_APP {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LCTRL>, <&kp K_APP>;
         };
 
-        td5: tap_dance_5 {
+        td5: BSPC_DEL {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp BSPC>, <&kp DEL>;
+        };
 
-            label = "BSPC-DEL";
+        ht0: hold_tap_0 {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -94,7 +100,7 @@
             bindings = <
 &kp ESC  &kp Q  &kp W  &kp E  &kp R      &kp T  &kp Y    &kp U  &kp I      &kp O    &kp P     &kp MINUS  &kp C_MUTE
 &kp TAB  &kp A  &kp S  &kp D  &kp F      &kp G  &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT    &kp PSCRN
-&td3     &kp Z  &kp X  &kp C  &kp V      &kp B  &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp UP     &kp RSHIFT
+&td3     &kp Z  &kp X  &kp C  &kp V      &kp B  &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp UP     &ht0 RSHIFT DEL
 &td2     &td0   &td4          &kp SPACE         &kp RET         &td5       &td1     &kp LEFT  &kp DOWN   &kp RIGHT
             >;
 
