@@ -1,4 +1,4 @@
-![image](https://github.com/slabua/zmk-config-saru48wplus/assets/1002978/83bc64d2-4028-4331-b6d6-d4c277c931d4)
+![image](https://github.com/slabua/zmk-config-saru48wplus/assets/1002978/c14f768f-2f4b-4909-803a-446efa88c5e1)
 
 DEFAULT
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -24,5 +24,5 @@ RAISE
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |   F1    |   F2    |   F3    |   F4    |   F5    |   F6    |   F7    |   F8    |   F9    |   F10   |   F11   |   F12   | BOOTLDR |
 |         | BT CLR  | OUT-BLE | OUT-USB |         |         |         |         |         |         |    `    |    ~    |  HOME   |
-| LSHIFT  |   BT1   |   BT2   |   BT3   |   BT4   |   BT5   |         |         |         |         |    \    |         |   END   |
+| LSHIFT  |BT1/DISC |BT2/DISC |BT3/DISC |BT4/DISC |BT5/DISC |         |         |         |         |    \    |         |   END   |
 |LALT/RWIN|  LWIN   |LCTRL/APP|         |  SPACE  |         | RETURN  |         |BKSPC/DEL|  XXXXX  |         |         |         |

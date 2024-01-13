@@ -77,6 +77,41 @@
             bindings = <&kp BSPC>, <&kp DEL>;
         };
 
+        td6: BT0_DISC0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_SEL 0>, <&bt BT_DISC 0>;
+        };
+
+        td7: BT1_DISC1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_SEL 1>, <&bt BT_DISC 1>;
+        };
+
+        td8: BT2_DISC2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_SEL 2>, <&bt BT_DISC 2>;
+        };
+
+        td9: BT3_DISC3 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_SEL 3>, <&bt BT_DISC 3>;
+        };
+
+        td10: BT4_DISC4 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_SEL 4>, <&bt BT_DISC 4>;
+        };
+
         ht0: hold_tap_0 {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
@@ -131,14 +166,14 @@
             // -----------------------------------------------------------------------------------------------------------------------------------
             // |   F1    |   F2    |   F3    |   F4    |   F5    |   F6    |   F7    |   F8    |   F9    |   F10   |   F11   |   F12   | BOOTLDR |
             // |         | BT CLR  | OUT-BLE | OUT-USB |         |         |         |         |         |         |    `    |    ~    |  HOME   |
-            // | LSHIFT  |   BT1   |   BT2   |   BT3   |   BT4   |   BT5   |         |         |         |         |    \    |         |   END   |
+            // | LSHIFT  |BT1/DISC |BT2/DISC |BT3/DISC |BT4/DISC |BT5/DISC |         |         |         |         |    \    |         |   END   |
             // |LALT/RWIN|  LWIN   |LCTRL/APP|         |  SPACE  |         | RETURN  |         |BKSPC/DEL|  XXXXX  |         |         |         |
             // -----------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7   &kp F8  &kp F9  &kp F10  &kp F11    &kp F12    &bootloader
 &none       &bt BT_CLR    &out OUT_BLE  &out OUT_USB  &none         &none         &none    &none   &none   &none    &kp GRAVE  &kp TILDE  &kp HOME
-&kp LSHIFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none    &none   &none   &none    &kp BSLH   &none      &kp END
+&kp LSHIFT  &td6          &td6          &td6          &td6          &td6          &none    &none   &none   &none    &kp BSLH   &none      &kp END
 &td2        &kp LWIN      &td4                        &kp SPACE                   &kp RET          &td5    &none    &none      &none      &none
             >;
         };
