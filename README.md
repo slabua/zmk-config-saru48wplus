@@ -1,7 +1,9 @@
+### ZMK configuration for [Saru48W+](https://github.com/slabua/keyboards/tree/main/saru48wplus) Mechanical Keyboard  
+An ortholinear 13x4 hand-wired custom Mechanical Keyboard based on the nice!nano.
+
 ![image](https://github.com/slabua/zmk-config-saru48wplus/assets/1002978/c14f768f-2f4b-4909-803a-446efa88c5e1)
 
-DEFAULT
------------------------------------------------------------------------------------------------------------------------------------
+### Default Layer
 ||||||||||||||
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |   ESC   |    Q    |    W    |    E    |    R    |    T    |    Y    |    U    |    I    |    O    |    P    |    -    |  MUTE   |
@@ -9,8 +11,7 @@ DEFAULT
 |LSHF/SYSR|    Z    |    X    |    C    |    V    |    B    |    N    |    M    |    ,    |    .    |    /    |   UP    |RSHFT/DEL|
 |LALT/RWIN|LOWR/LWIN|LCTRL/APP|         |  SPACE  |         | RETURN  |         |BKSPC/DEL|RAIS/RALT|  LEFT   |  DOWN   |  RIGHT  |
 
-LOWER
------------------------------------------------------------------------------------------------------------------------------------
+### Lower Layer
 ||||||||||||||
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |         |    !    |    @    |    #    |    $    |    (    |    )    |    7    |    8    |    9    |    *    |    -    |ZOOMRESET|
@@ -18,8 +19,7 @@ LOWER
 | LSHIFT  |         |         |         |         |         |    0    |    1    |    2    |    3    |    .    |    =    |  PgDN   |
 |LALT/RWIN|  XXXXX  |LCTRL/APP|         |  SPACE  |         | RETURN  |         |BKSPC/DEL|  RALT   |         |         | RETURN  |
 
-RAISE
------------------------------------------------------------------------------------------------------------------------------------
+### Raise Layer
 ||||||||||||||
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |   F1    |   F2    |   F3    |   F4    |   F5    |   F6    |   F7    |   F8    |   F9    |   F10   |   F11   |   F12   | BOOTLDR |
