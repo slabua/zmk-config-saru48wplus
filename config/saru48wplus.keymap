@@ -187,6 +187,7 @@
         };
 
         adjust_layer {
+            bindings = <>;
             sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
     };
