@@ -46,7 +46,7 @@
         td0: Lower_LGUI {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&mo LOWER>, <&kp LWIN>;
         };
 
@@ -161,10 +161,10 @@
             // -----------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&none        &kp EXCL   &kp AT    &kp HASH  &kp DLLR   &kp LPAR  &kp RPAR  &kp N7  &kp N8  &kp N9    &kp KP_ASTERISK  &kp KP_MINUS  &kp LC(N0)
-&kp PIPE     &kp CARET  &kp AMPS  &kp STAR  &kp PRCNT  &kp LBKT  &kp RBKT  &kp N4  &kp N5  &kp N6    &kp KP_SLASH     &kp KP_PLUS   &kp PG_UP
-&kp LSHIFT   &none      &none     &none     &none      &none     &kp N0    &kp N1  &kp N2  &kp N3    &kp KP_DOT       &kp KP_EQUAL  &kp PG_DN
-&td2         &none      &td4                &kp SPACE            &kp RET           &td5    &kp RALT  &none            &none         &kp RET
+&none       &kp EXCL   &kp AT    &kp HASH  &kp DLLR   &kp LPAR  &kp RPAR  &kp N7  &kp N8  &kp N9    &kp KP_ASTERISK  &kp KP_MINUS  &kp LC(N0)
+&kp PIPE    &kp CARET  &kp AMPS  &kp STAR  &kp PRCNT  &kp LBKT  &kp RBKT  &kp N4  &kp N5  &kp N6    &kp KP_SLASH     &kp KP_PLUS   &kp PG_UP
+&kp LSHIFT  &none      &none     &none     &none      &none     &kp N0    &kp N1  &kp N2  &kp N3    &kp KP_DOT       &kp KP_EQUAL  &kp PG_DN
+&td2        &none      &td4                &kp SPACE            &kp RET           &td5    &kp RALT  &none            &none         &kp RET
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
@@ -179,15 +179,17 @@
             // -----------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7   &kp F8  &kp F9  &kp F10  &kp F11    &kp F12    &bootloader
-&none       &bt BT_CLR    &out OUT_BLE  &out OUT_USB  &none         &none         &none    &none   &none   &none    &kp GRAVE  &kp TILDE  &kp HOME
-&kp LSHIFT  &td6          &td6          &td6          &td6          &td6          &none    &none   &none   &none    &kp BSLH   &none      &kp END
-&td2        &kp LWIN      &td4                        &kp SPACE                   &kp RET          &td5    &none    &none      &none      &none
+&kp F1      &kp F2      &kp F3        &kp F4        &kp F5     &kp F6  &kp F7   &kp F8  &kp F9  &kp F10  &kp F11    &kp F12    &bootloader
+&none       &bt BT_CLR  &out OUT_BLE  &out OUT_USB  &none      &none   &none    &none   &none   &none    &kp GRAVE  &kp TILDE  &kp HOME
+&kp LSHIFT  &td6        &td6          &td6          &td6       &td6    &none    &none   &none   &none    &kp BSLH   &none      &kp END
+&td2        &kp LWIN    &td4                        &kp SPACE          &kp RET          &td5    &none    &none      &none      &none
             >;
         };
 
         adjust_layer {
-            bindings = <&none>;
+            bindings = <
+&none
+            >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
