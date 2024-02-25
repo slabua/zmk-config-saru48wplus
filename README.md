@@ -11,6 +11,8 @@ An ortholinear 13x4 hand-wired custom Mechanical Keyboard based on the nice!nano
 |LSHF/SYSR|    Z    |    X    |    C    |    V    |    B    |    N    |    M    |    ,    |    .    |    /    |   UP    |RSHFT/DEL|
 |LALT/RWIN|LOWR/LWIN|LCTRL/APP|         |  SPACE  |         | RETURN  |         |BKSPC/DEL|RAIS/RALT|  LEFT   |  DOWN   |  RIGHT  |
 
+Encoder: C_VOL_UP, C_VOL_DN
+
 ### Lower Layer
 ||||||||||||||
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -19,10 +21,24 @@ An ortholinear 13x4 hand-wired custom Mechanical Keyboard based on the nice!nano
 | LSHIFT  |         |         |         |         |         |    0    |    1    |    2    |    3    |    .    |    =    |  PgDN   |
 |LALT/RWIN|  XXXXX  |LCTRL/APP|         |  SPACE  |         | RETURN  |         |BKSPC/DEL|  RALT   |         |         | RETURN  |
 
+Encoder: LC(PLUS), LC(MINUS)
+
 ### Raise Layer
 ||||||||||||||
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |   F1    |   F2    |   F3    |   F4    |   F5    |   F6    |   F7    |   F8    |   F9    |   F10   |   F11   |   F12   | BOOTLDR |
-|         | BT CLR  | OUT-BLE | OUT-USB |         |         |         |         |         |         |    `    |    ~    |  HOME   |
+|         |         | OUT-BLE | OUT-USB |         |         |         |         |         |         |    `    |    ~    |  HOME   |
 | LSHIFT  |BT1/DISC |BT2/DISC |BT3/DISC |BT4/DISC |BT5/DISC |         |         |         |         |    \    |         |   END   |
 |LALT/RWIN|  LWIN   |LCTRL/APP|         |  SPACE  |         | RETURN  |         |BKSPC/DEL|  XXXXX  |         |         |         |
+
+Encoder: -, -
+
+### Adjust Layer (LSHF+LOWR)
+||||||||||||||
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|         |         |         |         |         |         |         |         |         |         |         |         | BT CLR  |
+|         |         |         |         |         |         |         |         |         |         |         |         |         |
+|         |         |         |         |         |         |         |         |         |         |         |         |         |
+|         |         |         |         |         |         |         |         |         |         |         |         |         |
+
+Encoder: DOWN, UP
