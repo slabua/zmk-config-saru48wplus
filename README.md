@@ -1,7 +1,7 @@
 ### ZMK configuration for [Saru48W+](https://github.com/slabua/keyboards/tree/main/saru48wplus) Mechanical Keyboard
 An ortholinear 13x4 hand-wired custom Mechanical Keyboard based on the nice!nano.
 
-![image](https://github.com/slabua/zmk-config-saru48wplus/assets/1002978/c029915b-50fd-4b6a-89fe-6a049818f539)
+![image](https://github.com/slabua/zmk-config-saru48wplus/assets/1002978/43f81249-28bc-498b-8c6f-22d4e38f3f3d)
 
 ### Default Layer
 ||||||||||||||
@@ -19,7 +19,7 @@ Encoder: C_VOL_UP, C_VOL_DN
 |         |    !    |    @    |    #    |    $    |    (    |    )    |    7    |    8    |    9    |    *    |    -    |ZOOMRESET|
 |   \|    |    ^    |    &    |    *    |    %    |    [    |    ]    |    4    |    5    |    6    |    /    |    +    |  PgUP   |
 | LSHIFT  |         |         |         |         |         |    0    |    1    |    2    |    3    |    .    |    =    |  PgDN   |
-|LALT/RWIN|  XXXXX  |LCTRL/APP|         |  SPACE  |         | RETURN  |         |   DEL   |  RALT   |         |         | RETURN  |
+|LALT/RWIN|  XXXXX  |LCTRL/APP|         |  SPACE  |         | RETURN  |    0    |   DEL   |    .    |         |   DEL   | RETURN  |
 
 Encoder: LC(PLUS), LC(MINUS)
 
