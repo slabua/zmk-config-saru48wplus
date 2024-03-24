@@ -19,7 +19,7 @@ Encoder: C_VOL_UP, C_VOL_DN
 |         |    !    |    @    |    #    |    $    |    (    |    )    |    7    |    8    |    9    |    *    |    -    |ZOOMRESET|
 |   \|    |    ^    |    &    |    *    |    %    |    [    |    ]    |    4    |    5    |    6    |    /    |    +    |  PgUP   |
 | LSHIFT  |         |         |         |         |         |    0    |    1    |    2    |    3    |    .    |    =    |  PgDN   |
-|LALT/RWIN|  XXXXX  |LCTRL/APP|         |  SPACE  |         | RETURN  |    0    |   DEL   |    .    |         |   DEL   | RETURN  |
+|LALT/RWIN|  XXXXX  |LCTRL/APP|         |  SPACE  |         | RETURN  |         |    0    |    .    |         |   DEL   | RETURN  |
 
 Encoder: LC(PLUS), LC(MINUS)
 
