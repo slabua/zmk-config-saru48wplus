@@ -155,15 +155,15 @@
         lower_layer {
             // -----------------------------------------------------------------------------------------------------------------------------------
             // |         |    !    |    @    |    #    |    $    |    (    |    )    |    7    |    8    |    9    |    *    |    -    |ZOOMRESET|
-            // |    |    |    ^    |    &    |    *    |    %    |    [    |    ]    |    4    |    5    |    6    |    /    |    +    |  PgUP   |
-            // | LSHIFT  |         |         |         |         |         |    0    |    1    |    2    |    3    |    .    |    =    |  PgDN   |
+            // |    |    |    ^    |    &    |    *    |    %    |    [    |    ]    |    4    |    5    |    6    |    /    |    +    |  HOME   |
+            // | LSHIFT  |         |         |         |         |         |    0    |    1    |    2    |    3    |    .    |    =    |   END   |
             // |LALT/RWIN|  XXXXX  |LCTRL/APP|         |  SPACE  |         | RETURN  |         |    0    |    .    |         |   DEL   | RETURN  |
             // -----------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
 &none       &kp EXCL   &kp AT    &kp HASH  &kp DLLR   &kp LPAR  &kp RPAR  &kp N7  &kp N8  &kp N9      &kp KP_ASTERISK  &kp KP_MINUS  &kp LC(N0)
-&kp PIPE    &kp CARET  &kp AMPS  &kp STAR  &kp PRCNT  &kp LBKT  &kp RBKT  &kp N4  &kp N5  &kp N6      &kp KP_SLASH     &kp KP_PLUS   &kp PG_UP
-&kp LSHIFT  &none      &none     &none     &none      &none     &kp N0    &kp N1  &kp N2  &kp N3      &kp KP_DOT       &kp KP_EQUAL  &kp PG_DN
+&kp PIPE    &kp CARET  &kp AMPS  &kp STAR  &kp PRCNT  &kp LBKT  &kp RBKT  &kp N4  &kp N5  &kp N6      &kp KP_SLASH     &kp KP_PLUS   &kp HOME
+&kp LSHIFT  &none      &none     &none     &none      &none     &kp N0    &kp N1  &kp N2  &kp N3      &kp KP_DOT       &kp KP_EQUAL  &kp END
 &td2        &none      &td4                &kp SPACE            &kp RET           &kp N0  &kp KP_DOT  &none            &kp DEL       &kp RET
             >;
 
@@ -173,15 +173,15 @@
         raise_layer {
             // -----------------------------------------------------------------------------------------------------------------------------------
             // |   F1    |   F2    |   F3    |   F4    |   F5    |   F6    |   F7    |   F8    |   F9    |   F10   |   F11   |   F12   | BOOTLDR |
-            // |         |         | OUT-BLE | OUT-USB |         |         |         |         |         |         |    `    |    ~    |  HOME   |
-            // | LSHIFT  |BT1/DISC |BT2/DISC |BT3/DISC |BT4/DISC |BT5/DISC |         |         |         |         |    \    |         |   END   |
+            // |         |         | OUT-BLE | OUT-USB |         |         |         |         |         |         |    `    |    ~    |  PgUP   |
+            // | LSHIFT  |BT1/DISC |BT2/DISC |BT3/DISC |BT4/DISC |BT5/DISC |         |         |         |         |    \    |         |  PgDN   |
             // |LALT/RWIN|  LWIN   |LCTRL/APP|         |  SPACE  |         | RETURN  |         |         |  XXXXX  |         |         |         |
             // -----------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
 &kp F1      &kp F2    &kp F3        &kp F4        &kp F5     &kp F6  &kp F7   &kp F8  &kp F9  &kp F10  &kp F11    &kp F12    &bootloader
-&none       &none     &out OUT_BLE  &out OUT_USB  &none      &none   &none    &none   &none   &none    &kp GRAVE  &kp TILDE  &kp HOME
-&kp LSHIFT  &td6      &td6          &td6          &td6       &td6    &none    &none   &none   &none    &kp BSLH   &none      &kp END
+&none       &none     &out OUT_BLE  &out OUT_USB  &none      &none   &none    &none   &none   &none    &kp GRAVE  &kp TILDE  &kp PG_UP
+&kp LSHIFT  &td6      &td6          &td6          &td6       &td6    &none    &none   &none   &none    &kp BSLH   &none      &kp PG_DN
 &td2        &kp LWIN  &td4                        &kp SPACE          &kp RET          &none   &none    &none      &none      &none
             >;
         };

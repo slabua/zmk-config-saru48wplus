@@ -1,7 +1,7 @@
 ### ZMK configuration for [Saru48W+](https://github.com/slabua/keyboards/tree/main/saru48wplus) Mechanical Keyboard
 An ortholinear 13x4 hand-wired custom Mechanical Keyboard based on the nice!nano.
 
-![image](https://github.com/slabua/zmk-config-saru48wplus/assets/1002978/43f81249-28bc-498b-8c6f-22d4e38f3f3d)
+![image](https://github.com/user-attachments/assets/6fd52342-d6b6-4f0a-aec7-d79f736c44ac)
 
 ### Default Layer
 ||||||||||||||
@@ -17,8 +17,8 @@ Encoder: C_VOL_UP, C_VOL_DN
 ||||||||||||||
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |         |    !    |    @    |    #    |    $    |    (    |    )    |    7    |    8    |    9    |    *    |    -    |ZOOMRESET|
-|   \|    |    ^    |    &    |    *    |    %    |    [    |    ]    |    4    |    5    |    6    |    /    |    +    |  PgUP   |
-| LSHIFT  |         |         |         |         |         |    0    |    1    |    2    |    3    |    .    |    =    |  PgDN   |
+|   \|    |    ^    |    &    |    *    |    %    |    [    |    ]    |    4    |    5    |    6    |    /    |    +    |  HOME   |
+| LSHIFT  |         |         |         |         |         |    0    |    1    |    2    |    3    |    .    |    =    |   END   |
 |LALT/RWIN|  XXXXX  |LCTRL/APP|         |  SPACE  |         | RETURN  |         |    0    |    .    |         |   DEL   | RETURN  |
 
 Encoder: LC(PLUS), LC(MINUS)
@@ -27,8 +27,8 @@ Encoder: LC(PLUS), LC(MINUS)
 ||||||||||||||
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |   F1    |   F2    |   F3    |   F4    |   F5    |   F6    |   F7    |   F8    |   F9    |   F10   |   F11   |   F12   | BOOTLDR |
-|         |         | OUT-BLE | OUT-USB |         |         |         |         |         |         |    `    |    ~    |  HOME   |
-| LSHIFT  |BT1/DISC |BT2/DISC |BT3/DISC |BT4/DISC |BT5/DISC |         |         |         |         |    \    |         |   END   |
+|         |         | OUT-BLE | OUT-USB |         |         |         |         |         |         |    `    |    ~    |  PgUP   |
+| LSHIFT  |BT1/DISC |BT2/DISC |BT3/DISC |BT4/DISC |BT5/DISC |         |         |         |         |    \    |         |  PgDN   |
 |LALT/RWIN|  LWIN   |LCTRL/APP|         |  SPACE  |         | RETURN  |         |         |  XXXXX  |         |         |         |
 
 Encoder: -, -
