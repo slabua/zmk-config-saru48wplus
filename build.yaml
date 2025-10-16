@@ -22,3 +22,7 @@ include:
     shield: saru48wplus
   - board: nice_nano_v2
     shield: settings_reset
+  - board: stm32_min_dev_blue
+    shield: saru48wplus
+  - board: stm32_min_dev_blue
+    shield: settings_reset
